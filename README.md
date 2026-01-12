@@ -77,3 +77,12 @@ Provide clear communication and step-by-step solutions
 Contact:
 If you'd like to connect:
 Email: dadelman25@gmail.com
+
+---
+
+## Projects & Troubleshooting Labs
+
+### Account Lockout Troubleshooting Lab
+Hands-on user account lockout simulation using Event Viewer, Local Users and Groups, and password resets.
+
+[View the full lab](Windows-Troubleshooting/Account-Lockout/account_lockout.md)

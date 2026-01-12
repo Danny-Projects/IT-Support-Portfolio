@@ -8,58 +8,82 @@ Eventually, the account becomes locked.
 - User unable to log in  
 - “Incorrect password” errors  
 - “Account is locked out” in user properties  
-- Event Viewer showing failed logon attempts  
+- Failed logon events in Event Viewer  
 
-## Tools Used
-- Event Viewer
-- lusrmgr.msc (Local Users and Groups)
-- Command Prompt
-- Windows login screen
+---
 
-## Root Cause
-Too many incorrect password attempts triggered the account lockout threshold.
+## Step 1 — Reproduce the Issue (Lockout)
+I intentionally attempted incorrect passwords several times to trigger a lockout on `TestUser1`.
 
-## Resolution Steps
+### Screenshot — Account Lockout Message
+![Account Lockout Message](./screenshots/Account_Lockout_1.png)
 
-### 1. Reproduced the Issue
-- Attempted incorrect passwords to intentionally trigger lockout.
-- Confirmed the “Account is locked out” status.
+---
 
-### 2. Checked Event Viewer
-- Opened Event Viewer (`eventvwr.msc`).
-- Navigated to **Windows Logs → Security**.
-- Located repeated failed logon events for the test user.
+## Step 2 — Check Event Viewer for Failed Logon Attempts
+Using Event Viewer:
 
-### 3. Checked User Account Status
-- Opened **Local Users and Groups** (`lusrmgr.msc`).
-- Found test user under *Users*.
-- User properties showed **“Account is locked out.”**
+1. Opened Event Viewer (`eventvwr.msc`)  
+2. Navigated to **Windows Logs → Security**  
+3. Found failed logon attempts (Event ID 4625) associated with the test user  
 
-### 4. Reset Password
-Used Command Prompt (Admin):
+### Screenshot — Event Viewer (4625 Failed Logon)
+![Event Viewer Failed Logons](./screenshots/EventViewer_4625.png)
 
+---
+
+## Step 3 — Inspect User Status in Local Users and Groups
+Used Local Users and Groups (`lusrmgr.msc`) to check the account status.  
+The account correctly showed **“Account is locked out.”**
+
+### Screenshot — User Properties (Locked Out)
+![User Locked Out](./screenshots/user_locked.png)
+
+---
+
+## Step 4 — Unlock the Account & Reset Password
+The lockout was cleared by resetting the password using Command Prompt (Admin):
 ```cmd
-net user TestUser1 TempPass123
+net user TestUser1 TempPass456
 ```
 
-### 5. Unlocked the Account
-- Unchecked “Account is locked out.”
-- Saved changes.
+This simultaneously unlocks the account and assigns a temporary password.
 
-### 6. Tested Login
-- Logged in using the new password.
-- Verified successful login.
+### Screenshot — Password Reset (net user)
+![Password Reset](./screenshots/password_reset.png)
 
-## What I Learned
-- How Windows handles account lockouts
-- How Event Viewer logs failed sign-in attempts
-- How to reset a password using GUI and command line
-- How to unlock local accounts in lusrmgr
-- Good practice for real help desk scenarios
+---
 
-## Screenshots (Will Be Added)
-- Lockout screen
-- Event Viewer logs showing failed attempts
-- User properties with lockout enabled
-- net user password reset command
-- Successful login screen
+## Step 5 — Verify Successful Login
+Once unlocked and reset, I logged in successfully using the temporary password.
+
+### Screenshot — Successful Login
+![Successful Login](./screenshots/login_success.png)
+
+---
+
+## Root Cause
+Too many incorrect password attempts triggered the lockout threshold, preventing authentication until the account was reset.
+
+---
+
+## Resolution Summary
+✔ Identified failed logon attempts in Event Viewer  
+✔ Confirmed lockout status in Local Users and Groups  
+✔ Unlocked account by resetting the password via Command Prompt  
+✔ Verified login with new temporary password  
+
+---
+
+## Tools Used
+- Event Viewer  
+- lusrmgr.msc (Local Users and Groups)  
+- Command Prompt (Admin)  
+- Windows Login Screen  
+
+---
+
+## Notes
+This lab demonstrates how a Tier 1 IT Support professional handles user lockouts, validates system logs, and restores access quickly and safely.
+
+

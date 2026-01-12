@@ -40,3 +40,26 @@ Used Command Prompt (Admin):
 
 ```cmd
 net user TestUser1 TempPass123
+```
+
+### 5. Unlocked the Account
+- Unchecked “Account is locked out.”
+- Saved changes.
+
+### 6. Tested Login
+- Logged in using the new password.
+- Verified successful login.
+
+## What I Learned
+- How Windows handles account lockouts
+- How Event Viewer logs failed sign-in attempts
+- How to reset a password using GUI and command line
+- How to unlock local accounts in lusrmgr
+- Good practice for real help desk scenarios
+
+## Screenshots (Will Be Added)
+- Lockout screen
+- Event Viewer logs showing failed attempts
+- User properties with lockout enabled
+- net user password reset command
+- Successful login screen

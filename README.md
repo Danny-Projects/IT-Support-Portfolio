@@ -82,18 +82,27 @@ Email: dadelman25@gmail.com
 ---
 
 ## Projects & Troubleshooting Labs
-
+---
 ### Account Lockout Troubleshooting Lab
 Hands-on user account lockout simulation using Event Viewer, Local Users and Groups, and password resets.
 
 [View the full lab](Windows-Troubleshooting/Account-Lockout/account_lockout.md)
 
+---  
 ### DNS Troubleshooting Lab 
 Hands-on DNS failure simulation using manual DNS override, nslookup error analysis, ipconfig tools, and restoration of default network settings.
 
-  [View the full lab](DNS-Troubleshooting/dns_lab.md)
+[View the full lab](DNS-Troubleshooting/dns_lab.md)
 
+---
 ### Networking Basics Troubleshooting Lab
 Core networking diagnostics including ipconfig analysis, ping hierarchy testing (localhost → gateway → WAN → domain), tracert routing evaluation, and adapter reset procedures.
 
-  [View the full lab](Networking/networking_lab.md)
+[View the full lab](Networking/networking_lab.md)
+
+---
+### Printer Troubleshooting Lab  
+Simulated network printer failure caused by an incorrect TCP/IP port. Troubleshooting steps included spooler restart, print queue analysis, TCP/IP port inspection, reconfiguration to FILE: port, and validation with a successful test print.  
+
+
+[View the full lab](printer-troubleshooting/printer_lab.md)

@@ -87,3 +87,13 @@ Email: dadelman25@gmail.com
 Hands-on user account lockout simulation using Event Viewer, Local Users and Groups, and password resets.
 
 [View the full lab](Windows-Troubleshooting/Account-Lockout/account_lockout.md)
+
+### DNS Troubleshooting Lab 
+Hands-on DNS failure simulation using manual DNS override, nslookup error analysis, ipconfig tools, and restoration of default network settings.
+
+  [View the full lab](DNS-Troubleshooting/dns_lab.md)
+
+### Networking Basics Troubleshooting Lab
+Core networking diagnostics including ipconfig analysis, ping hierarchy testing (localhost → gateway → WAN → domain), tracert routing evaluation, and adapter reset procedures.
+
+  [View the full lab](Networking/networking_lab.md)

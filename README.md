@@ -98,7 +98,7 @@ Hands-on DNS failure simulation using manual DNS override, nslookup error analys
 ### Networking Basics Troubleshooting Lab
 Core networking diagnostics including ipconfig analysis, ping hierarchy testing (localhost → gateway → WAN → domain), tracert routing evaluation, and adapter reset procedures.
 
-[View the full lab](Networking/networking_lab.md)
+[View the full lab](https://github.com/Danny-Projects/IT-Support-Portfolio/blob/main/Networking%20/networking_lab.md)
 
 ---
 ### Printer Troubleshooting Lab  

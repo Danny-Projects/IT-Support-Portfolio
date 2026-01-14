@@ -105,4 +105,4 @@ Core networking diagnostics including ipconfig analysis, ping hierarchy testing 
 Simulated network printer failure caused by an incorrect TCP/IP port. Troubleshooting steps included spooler restart, print queue analysis, TCP/IP port inspection, reconfiguration to FILE: port, and validation with a successful test print.  
 
 
-[View the full lab](Printer-troubleshooting/printer_lab.md)
+[View the full lab](Printer-Troubleshooting/printer_lab.md)

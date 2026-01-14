@@ -45,6 +45,7 @@ Git/GitHub for documentation
 
 Certifications:
 Google IT Support Professional Certificate
+
 CompTIA A+ (In Progress)
 
 Below are hands-on troubleshooting labs I completed to simulate real help desk issues:

@@ -106,3 +106,10 @@ Simulated network printer failure caused by an incorrect TCP/IP port. Troublesho
 
 
 [View the full lab](Printer-Troubleshooting/printer_lab.md)
+
+---
+### Active Directory Troubleshooting Lab  
+Hands-on Active Directory environment setup including domain controller deployment, organizational unit design, user and group management, domain join validation, and Group Policy enforcement.  
+
+
+[View the full lab](Active-Directory/active_directory_lab.md)

@@ -112,4 +112,4 @@ Simulated network printer failure caused by an incorrect TCP/IP port. Troublesho
 Hands-on Active Directory environment setup including domain controller deployment, organizational unit design, user and group management, domain join validation, and Group Policy enforcement.  
 
 
-[View the full lab](Active-Directory/active_directory_lab.md)
+[View the full lab](https://github.com/Danny-Projects/IT-Support-Portfolio/blob/main/Active-Directory%20/active_directory_lab.md)

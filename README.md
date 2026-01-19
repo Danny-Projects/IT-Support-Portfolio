@@ -53,13 +53,8 @@ Below are hands-on troubleshooting labs I completed to simulate real help desk i
 Windows Troubleshooting:
 Account Lockout Lab
 DNS Failure Troubleshooting
- (coming soon)
-Printer Offline Troubleshooting
- (coming soon)
-No Internet Access / DHCP Issue
- (coming soon)
-Audio Service Not Running
- (coming soon)
+ Printer Offline Troubleshooting
+ No Internet Access / DHCP Issue
 
 Networking Labs:
 Ping & Traceroute Diagnostics

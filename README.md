@@ -104,7 +104,6 @@ Core networking diagnostics including ipconfig analysis, ping hierarchy testing 
 ### Printer Troubleshooting Lab  
 Simulated network printer failure caused by an incorrect TCP/IP port. Troubleshooting steps included spooler restart, print queue analysis, TCP/IP port inspection, reconfiguration to FILE: port, and validation with a successful test print.  
 
-
 [View the full lab](Printer-Troubleshooting/printer_lab.md)
 
 ---
@@ -113,3 +112,9 @@ Hands-on Active Directory environment setup including domain controller deployme
 
 
 [View the full lab](https://github.com/Danny-Projects/IT-Support-Portfolio/blob/main/Active-Directory%20/active_directory_lab.md)
+
+---
+### VLAN Basics & Network Segmentation Troubleshooting Lab  
+Simulated VLAN isolation using VirtualBox internal networks, including subnet verification, connectivity testing, firewall troubleshooting, and restoration of network communication.  
+
+[View the full lab](VLAN-Troubleshooting/vlan_basics_lab.md)
